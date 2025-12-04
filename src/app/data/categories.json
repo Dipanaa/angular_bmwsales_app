@@ -1,0 +1,25 @@
+[ {
+  "Categoria" : "Action",
+  "CalificacionPromedio" : 3.184469558877142
+}, {
+  "Categoria" : "Adventure",
+  "CalificacionPromedio" : 3.20629604822505
+}, {
+  "Categoria" : "Racing",
+  "CalificacionPromedio" : 3.422950819672131
+}, {
+  "Categoria" : "Role-playing",
+  "CalificacionPromedio" : 3.31409662475182
+}, {
+  "Categoria" : "Shooter",
+  "CalificacionPromedio" : 3.5478260869565217
+}, {
+  "Categoria" : "Simulation",
+  "CalificacionPromedio" : 3.072505091649694
+}, {
+  "Categoria" : "Sports",
+  "CalificacionPromedio" : 2.823913043478261
+}, {
+  "Categoria" : "Strategy",
+  "CalificacionPromedio" : 3.283071278825996
+} ]

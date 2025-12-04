@@ -21,7 +21,7 @@
     📈 Dashboard de indicadores clave (KPIs)
   </h3>
 
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 auto-rows-max lg:grid-cols-2 gap-8">
     <div
       class="mb-4 p-6 bg-white shadow-2xl rounded-xl transition duration-500 hover:shadow-3xl"
     >
@@ -30,9 +30,14 @@
       </h4>
 
       <canvas
-        class="h-64 flex items-center justify-center rounded-lg mb-4"
-      ></canvas>
-
+        baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [type]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"
+      >
+      </canvas>
       <p class="text-gray-700">
         <span class="font-semibold text-teal-700"
           >Descripción e Interpretación:</span
@@ -53,64 +58,60 @@
       </h4>
 
       <canvas
-        class="h-64 flex items-center justify-center rounded-lg mb-4"
-      ></canvas>
+        baseChart
+        [data]="barChartData2"
+        [options]="barChartOptions2"
+        [type]="barChartType2"
+        (chartHover)="chartHovered2($event)"
+        (chartClick)="chartClicked2($event)"
+      >
+      </canvas>
 
       <p class="text-gray-700">
         <span class="font-semibold text-blue-700"
           >Descripción e Interpretación :</span
         >
-        La visualización de los costos base por título (agrupados por categoría)
+        La visualización de los costos base por título (agrupados por categoría de accion)
         identifica a los títulos con mayor valor monetario. Las categorías
-        """"""Combat Mi y Birds and C """""" son las que concentran los juegos
+        de accion y aventura son las que concentran los juegos
         más caros. Esto ayuda a la gestión de inventario y a la estrategia de
         precios.
-      </p>
-    </div>
-
-    <div
-      class="mb-4 p-6 bg-white shadow-2xl rounded-xl transition duration-500 hover:shadow-3xl"
-    >
-      <h4 class="text-xl font-bold mb-3 text-green-600">
-        3. Suma total de reseñas por categoría
-      </h4>
-
-      <canvas
-        class="h-64 flex items-center justify-center rounded-lg mb-4"
-      ></canvas>
-
-      <p class="text-gray-700">
-        <span class="font-semibold text-green-700"
-          >Descripción e Interpretación:</span
-        >
-        El volumen de reseñas indica la participación e interés de la comunidad.
-        Role-playing y Action generan la mayor cantidad de interacciones. Es un
-        KPI clave para medir el compromiso (engagement) del cliente y la
-        vitalidad de la comunidad.
-      </p>
-    </div>
-
-    <div
-      class="mb-4 p-6 bg-white shadow-2xl rounded-xl transition duration-500 hover:shadow-3xl"
-    >
-      <h4 class="text-xl font-bold mb-3 text-purple-600">
-        4. Distribución porcentual de reseñas por categoría
-      </h4>
-
-      <canvas
-        class="h-64 flex items-center justify-center rounded-lg mb-4"
-      ></canvas>
-
-      <p class="text-gray-700">
-        <span class="font-semibold text-purple-700"
-          >Descripción e Interpretación:</span
-        >
-        El gráfico circular confirma la dominancia de Role-playing (26.39%) y
-        Action (23.61%) en la conversación en línea. Esta métrica es fundamental
-        para la asignación de recursos de comunicación y marketing digital.
+        Aqui se presentan los juegos que pertenecen a la categoria de accion.
       </p>
     </div>
   </div>
+
+
+  <div
+    class="mb-4 p-6 h-[50%] w-[50%] mx-auto bg-white shadow-2xl rounded-xl transition duration-500 hover:shadow-3xl"
+  >
+    <h4 class="text-xl font-bold mb-3 text-green-600">
+      3. Suma total de reseñas por categoría
+    </h4>
+
+    <canvas
+      baseChart
+      [data]="barChartData3"
+      [options]="barChartOptions3"
+      [type]="barChartType3"
+      (chartHover)="chartHovered3($event)"
+      (chartClick)="chartClicked3($event)"
+    >
+    </canvas>
+
+    <p class="text-gray-700">
+      <span class="font-semibold text-green-700"
+        >Descripción e Interpretación:</span
+      >
+      El volumen de reseñas indica la participación e interés de la comunidad.
+      Adventure y Action generan la mayor cantidad de interacciones. Es un
+      KPI clave para medir el compromiso (engagement) del cliente y la
+      vitalidad de la comunidad.
+    </p>
+  </div>
+
+
+
   <hr class="my-10" />
 
   <section
@@ -126,6 +127,8 @@
         transformación del dataset original. Este proceso se diseñó con un flujo
         lógico para ejecutarse semanalmente, reduciendo el tiempo manual en un
         80%.
+        Ademas incluimos PowerBI para un analisis tipo dashboard de los graficos respectivos antes de su implementacion
+        y transformacion en JSON.
       </p>
       <p>
         <span class="font-bold text-blue-600">Aplicación (Frontend):</span> Esta

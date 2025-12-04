@@ -1,0 +1,26 @@
+[ {
+  "Id" : 147,
+  "Titulo" : "Bright Memory",
+  "CalificacionPromedio" : 5.0,
+  "CostoBase" : 1.59
+}, {
+  "Id" : 207,
+  "Titulo" : "El Paso, Elsewhere",
+  "CalificacionPromedio" : 5.0,
+  "CostoBase" : 10.79
+}, {
+  "Id" : 10816,
+  "Titulo" : "BroodStar",
+  "CalificacionPromedio" : 5.0,
+  "CostoBase" : 8.99
+}, {
+  "Id" : 5553,
+  "Titulo" : "Gunborg",
+  "CalificacionPromedio" : 5.0,
+  "CostoBase" : 7.99
+}, {
+  "Id" : 958,
+  "Titulo" : "MULLET MAD JACK",
+  "CalificacionPromedio" : 5.0,
+  "CostoBase" : 25.59
+} ]

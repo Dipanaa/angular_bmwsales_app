@@ -1,0 +1,25 @@
+[ {
+  "Categoria" : "Action",
+  "CantidadResenas" : 2743
+}, {
+  "Categoria" : "Adventure",
+  "CantidadResenas" : 2986
+}, {
+  "Categoria" : "Racing",
+  "CantidadResenas" : 122
+}, {
+  "Categoria" : "Role-playing",
+  "CantidadResenas" : 1511
+}, {
+  "Categoria" : "Shooter",
+  "CantidadResenas" : 552
+}, {
+  "Categoria" : "Simulation",
+  "CantidadResenas" : 982
+}, {
+  "Categoria" : "Sports",
+  "CantidadResenas" : 92
+}, {
+  "Categoria" : "Strategy",
+  "CantidadResenas" : 1908
+} ]
